@@ -20,7 +20,12 @@
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Primary">
       <a class="nav__logo" href="#top" id="nav-logo" title="Emmanuel Eshitoli" aria-label="Emmanuel Eshitoli home">
-        <img class="nav__logo-img" src="assets/logo.svg" alt="" width="40" height="40" decoding="async">
+        <svg class="nav__logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+          <rect x="1" y="1" width="38" height="38" rx="10" fill="#181c24" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+          <path d="M8 12h7.5M8 20h5.5M8 28h7.5" stroke="#e8912d" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M17.5 12H26M17.5 20h-4.5M17.5 28H26" stroke="#e8eaed" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="33" cy="10" r="2.25" fill="#3dd68c"/>
+        </svg>
       </a>
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
         <span class="nav__toggle-bar"></span>
@@ -225,53 +230,69 @@
           </div>
 
           <div class="showcase__gallery" id="showcase-gallery">
-            <figure class="shot" data-full="assets/screenshots/01-landing-page.png" tabindex="0" role="button" aria-label="View Landing page screenshot">
-              <div class="shot__frame">
-                <img src="assets/screenshots/01-landing-page.png" alt="" loading="lazy" decoding="async" draggable="false">
-              </div>
-              <figcaption>Landing page</figcaption>
+            <figure class="shot">
+              <button type="button" class="shot__open" data-full="assets/screenshots/01-landing-page.png" aria-label="View Landing page screenshot">
+                <span class="shot__frame">
+                  <img src="assets/screenshots/01-landing-page.png" alt="" loading="lazy" decoding="async" draggable="false">
+                </span>
+                <span class="shot__label">Landing page</span>
+              </button>
             </figure>
-            <figure class="shot" data-full="assets/screenshots/02-dashboard.png" tabindex="0" role="button" aria-label="View Dashboard overview screenshot">
-              <div class="shot__frame">
-                <img src="assets/screenshots/02-dashboard.png" alt="" loading="lazy" decoding="async" draggable="false">
-              </div>
-              <figcaption>Dashboard overview</figcaption>
+            <figure class="shot">
+              <button type="button" class="shot__open" data-full="assets/screenshots/02-dashboard.png" aria-label="View Dashboard overview screenshot">
+                <span class="shot__frame">
+                  <img src="assets/screenshots/02-dashboard.png" alt="" loading="lazy" decoding="async" draggable="false">
+                </span>
+                <span class="shot__label">Dashboard overview</span>
+              </button>
             </figure>
-            <figure class="shot" data-full="assets/screenshots/03-dashboard-sidebar.png" tabindex="0" role="button" aria-label="View Navigation screenshot">
-              <div class="shot__frame">
-                <img src="assets/screenshots/03-dashboard-sidebar.png" alt="" loading="lazy" decoding="async" draggable="false">
-              </div>
-              <figcaption>Navigation</figcaption>
+            <figure class="shot">
+              <button type="button" class="shot__open" data-full="assets/screenshots/03-dashboard-sidebar.png" aria-label="View Navigation screenshot">
+                <span class="shot__frame">
+                  <img src="assets/screenshots/03-dashboard-sidebar.png" alt="" loading="lazy" decoding="async" draggable="false">
+                </span>
+                <span class="shot__label">Navigation</span>
+              </button>
             </figure>
-            <figure class="shot" data-full="assets/screenshots/05-inventory.png" tabindex="0" role="button" aria-label="View Inventory management screenshot">
-              <div class="shot__frame">
-                <img src="assets/screenshots/05-inventory.png" alt="" loading="lazy" decoding="async" draggable="false">
-              </div>
-              <figcaption>Inventory management</figcaption>
+            <figure class="shot">
+              <button type="button" class="shot__open" data-full="assets/screenshots/05-inventory.png" aria-label="View Inventory management screenshot">
+                <span class="shot__frame">
+                  <img src="assets/screenshots/05-inventory.png" alt="" loading="lazy" decoding="async" draggable="false">
+                </span>
+                <span class="shot__label">Inventory management</span>
+              </button>
             </figure>
-            <figure class="shot" data-full="assets/screenshots/04-finances.png" tabindex="0" role="button" aria-label="View Finances and projections screenshot">
-              <div class="shot__frame">
-                <img src="assets/screenshots/04-finances.png" alt="" loading="lazy" decoding="async" draggable="false">
-              </div>
-              <figcaption>Finances &amp; projections</figcaption>
+            <figure class="shot">
+              <button type="button" class="shot__open" data-full="assets/screenshots/04-finances.png" aria-label="View Finances and projections screenshot">
+                <span class="shot__frame">
+                  <img src="assets/screenshots/04-finances.png" alt="" loading="lazy" decoding="async" draggable="false">
+                </span>
+                <span class="shot__label">Finances &amp; projections</span>
+              </button>
             </figure>
-            <figure class="shot" data-full="assets/screenshots/08-stock-history.png" tabindex="0" role="button" aria-label="View Stock history screenshot">
-              <div class="shot__frame">
-                <img src="assets/screenshots/08-stock-history.png" alt="" loading="lazy" decoding="async" draggable="false">
-              </div>
-              <figcaption>Stock history</figcaption>
+            <figure class="shot">
+              <button type="button" class="shot__open" data-full="assets/screenshots/08-stock-history.png" aria-label="View Stock history screenshot">
+                <span class="shot__frame">
+                  <img src="assets/screenshots/08-stock-history.png" alt="" loading="lazy" decoding="async" draggable="false">
+                </span>
+                <span class="shot__label">Stock history</span>
+              </button>
             </figure>
-            <figure class="shot" data-full="assets/screenshots/07-calendar.png" tabindex="0" role="button" aria-label="View Calendar and planning screenshot">
-              <div class="shot__frame">
-                <img src="assets/screenshots/07-calendar.png" alt="" loading="lazy" decoding="async" draggable="false">
-              </div>
-              <figcaption>Calendar &amp; planning</figcaption>
+            <figure class="shot">
+              <button type="button" class="shot__open" data-full="assets/screenshots/07-calendar.png" aria-label="View Calendar and planning screenshot">
+                <span class="shot__frame">
+                  <img src="assets/screenshots/07-calendar.png" alt="" loading="lazy" decoding="async" draggable="false">
+                </span>
+                <span class="shot__label">Calendar &amp; planning</span>
+              </button>
             </figure>
-            <figure class="shot" data-full="assets/screenshots/06-reports.png" tabindex="0" role="button" aria-label="View One-click reports screenshot">
-              <div class="shot__frame">
-                <img src="assets/screenshots/06-reports.png" alt="" loading="lazy" decoding="async" draggable="false">
-              </div>
-              <figcaption>One-click reports</figcaption>
+            <figure class="shot">
+              <button type="button" class="shot__open" data-full="assets/screenshots/06-reports.png" aria-label="View One-click reports screenshot">
+                <span class="shot__frame">
+                  <img src="assets/screenshots/06-reports.png" alt="" loading="lazy" decoding="async" draggable="false">
+                </span>
+                <span class="shot__label">One-click reports</span>
+              </button>
             </figure>
           </div>
         </article>
